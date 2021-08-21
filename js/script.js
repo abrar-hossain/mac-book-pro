@@ -123,14 +123,8 @@ document.getElementById('button-field').addEventListener('click', function () {
         document.getElementById('bonus-total').innerText = bonusTotal - (bonusTotal * .2);
 
     }
-    else {
-        alert("Sike! That's The Wrong CODE!")
-    }
-
-    inputField.value = '';
-    inputField.setAttribute("disabled", false);
+    document.getElementById('input-field').value = '';
 });
-
 
 
 
