@@ -113,9 +113,8 @@ function totalPrice() {
 document.getElementById('button-field').addEventListener('click', function () {
 
 
-    const inputField = document.getElementById('input-field');
-    const promoCode = inputField.value;
-    const bonusTotal = document.getElementById('bonus-total').innerText;
+    const promoCode = document.getElementById('input-field').value;
+    const bonusTotal = document.getElementById('total-price').innerText;
     //check the input field;
     if (promoCode == 'stevekaku') {
 
@@ -125,6 +124,8 @@ document.getElementById('button-field').addEventListener('click', function () {
     }
     document.getElementById('input-field').value = '';
 });
+
+
 
 
 
